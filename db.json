@@ -1,0 +1,340 @@
+{
+  "users": [
+    {
+      "id": "7ec3d2f0-641e-11e9-9d5d-1b8ad05606d1",
+      "password": "",
+      "favs": [
+        "18",
+        "1"
+      ],
+      "avatar": "https://gravatar.com/avatar/8e04be7dab487d77f16969fd3e0d45d4",
+      "email": "miduga@gmail.com"
+    },{
+      "id": "7ec3d2f0-641e-11e9-9d5d-1b8ad05606d1",
+      "password": "12345",
+      "favs": [
+        "18",
+        "1",
+        "3",
+        "5"
+      ],
+      "avatar": "https://gravatar.com/avatar/8e04be7sssfd3e0d45d4",
+      "email": "nacho@gmail.com"
+    },
+    {
+      "id": "a882e1d0-6428-11e9-9b1f-8980b7d40890",
+      "password": "12345",
+      "favs": [
+        "18",
+        "16",
+        "1",
+        "15"
+      ],
+      "avatar": "https://gravatar.com/avatar/3bccd59be0a57b39bdd9b2760702795e",
+      "email": "dani@gmail.com"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "salsas",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/luke-van-zyl--zl31lo9vg8-unsplash_dqoawr.jpg",
+      "path": "/photos/salsas"
+    },
+    {
+      "id": 2,
+      "name": "ensaladas",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702589/categorias/taylor-kiser-EvoIiaIVRzU-unsplash_mm2brm.jpg",
+      "path": "/photos/ensaladas"
+    },
+    {
+      "id": 3,
+      "name": "sopas",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702589/categorias/sandie-clarke-z9h95s4DRXo-unsplash_s2jbqj.jpg",
+      "path": "/photos/sopas"
+    },
+    {
+      "id": 4,
+      "name": "carnes",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702588/categorias/jason-leung-O67LZfeyYBk-unsplash_tbrycq.jpg",
+      "path": "/photos/carnes"
+    },
+    {
+      "id": 5,
+      "name": "pescados",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/adrien-sala-qvIrI4ueqzY-unsplash_hsze7e.jpg",
+      "path": "/photos/pescados"
+    },
+    {
+      "id": 6,
+      "name": "fideos",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702589/categorias/riccardo-bergamini-Xe14NrSK9io-unsplash_vimqhq.jpg",
+      "path": "/photos/fideos"
+    },
+    {
+      "id": 7,
+      "name": "postres",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/brina-blum-P9WkD82hLUI-unsplash_wldq9d.jpg",
+      "path": "/photos/postres"
+    },
+    {
+      "id": 8,
+      "name": "bebidas",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/claudia-crespo-ewOrvEa87j4-unsplash_agcl2t.jpg",
+      "path": "/photos/reposteria"
+    }
+  ],
+  "photos": [
+    {
+      "id": 0,
+      "name": "Conejo al ajillo",
+      "tiempo": 30,
+      "dificultad": "fácil",
+      "categoryId": 4,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/v1566598896/carnes/Guiso-conejo-al-ajillo-1300x975_biluxw.jpg",
+      "userId": 100,
+      "likes": 7,
+      "rating": 5,
+      "ingredientes":[
+        "100gr ajos",
+        "100ml aceite",
+        "100gr tomate pelado",
+        "800gr conejo",
+        "Una hoja de laurel",
+        "80ml de agua"
+      ],
+      "preparación":[
+        "aceite, ajos, (reservar 6 ajos enteros con piel)",
+        "6s 6v",
+        "bajar los restos reogar",
+        "4m 1v 120°",
+        "Añadir el tomate troceado",
+        "4m 1v 120°",
+        "Colocar accesorio para remover (mariposa), poner colador en la tapa introducir introducir el conejo y añadir el agua",
+        "15m 1v 120°",
+        "Añadir los ajos reservados, el laurel, el tomillo y sal al gusto",
+        "8m 1v 120°"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 1,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909045/salsas/elevate-YtzVxO9NFjc-unsplash_ixguks.jpg",
+      "userId": 1,
+      "likes": 45,
+      "rating": 5
+    },
+    {
+      "id": 15,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 2,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565908962/ensaladas/taylor-kiser-EvoIiaIVRzU-unsplash_cklfbp.jpg",
+      "userId": 1,
+      "likes": 1,
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 5,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909006/pescados/nick-karvounis-AJCN8dyd_7w-unsplash_e3huyn.jpg",
+      "userId": 2,
+      "likes": 15,
+      "rating": 5
+    },
+    {
+      "id": 16,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 2,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565908962/ensaladas/louis-hansel-HF16IxB_tO4-unsplash_kbwuyb.jpg",
+      "userId": 1,
+      "likes": 1,
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 4,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565908875/carnes/kyndall-ramirez-3HpyvyPCjPA-unsplash_xyilbk.jpg",
+      "userId": 1,
+      "likes": 40,
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 3,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909093/sopas/sandie-clarke-z9h95s4DRXo-unsplash_njd3pp.jpg",
+      "userId": 3,
+      "likes": 6,
+      "rating": 5
+    },
+    {
+      "id": 13,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 1,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909045/salsas/luke-van-zyl--zl31lo9vg8-unsplash_nwws99.jpg",
+      "userId": 1,
+      "likes": 7,
+      "rating": 5
+    },
+    {
+      "id": 11,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 3,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909074/sopas/eiliv-sonas-aceron-aSg7LVDhubM-unsplash_zumxef.jpg",
+      "userId": 1,
+      "likes": 40,
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 4,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1565908874/carnes/jason-leung-AUAuEgUxg5Q-unsplash_pbznoy.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 8,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565908844/bebidas/dennis-klein-8oIo60aLztg-unsplash_i2wsd4.jpg",
+      "userId": 1,
+      "likes": 3,
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 7,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909024/postres/rachael-gorjestani-fs9MXZo-k1o-unsplash_xoqnzn.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 4,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565908873/carnes/annie-spratt-oT7_v-I0hHg-unsplash_sp14hw.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 9,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1565908844/bebidas/alexander-mils-wBIeri0fLuw-unsplash_ol1nye.jpg",
+      "userId": 1,
+      "likes": 7,
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 6,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565908977/fideos/riccardo-bergamini-Xe14NrSK9io-unsplash_ke2m6v.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 7,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909024/postres/brina-blum-P9WkD82hLUI-unsplash_ekaj5x.jpg",
+      "userId": 1,
+      "likes": 27,
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 7,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1565909028/postres/alina-karpenko-IAYQuCqD00g-unsplash_isyyxu.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 17,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 5,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909006/pescados/adrien-sala-qvIrI4ueqzY-unsplash_l9rcpv.jpg",
+      "userId": 1,
+      "likes": 21,
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 7,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565909023/postres/claudia-crespo-ewOrvEa87j4-unsplash_tepolp.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 20,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 6,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1565908977/fideos/amirali-mirhashemian-v2z6Yhp_6Gc-unsplash_qwlc5e.jpg",
+      "userId": 1,
+      "likes": 0,
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "name": "Nombre receta",
+      "tiempo": 30,
+      "dificultad": "fácil",     
+      "categoryId": 8,
+      "src": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565908844/bebidas/alexander-mils-wBIeri0fLuw-unsplash_ol1nye.jpg",
+      "userId": 1,
+      "likes": 27,
+      "rating": 5
+    }
+  ]
+}
