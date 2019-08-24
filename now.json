@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "cleals-server-github",
-  "alias": ["cleals-api-server-github"],
+  "name": "cleals-backgroundServer",
+  "alias": ["cleals-api-backgroundServer"],
   "builds": [{ "src": "index.js", "use": "@now/node" }],
   "routes": [{
     "headers": {
