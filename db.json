@@ -18,7 +18,7 @@
         "3",
         "5"
       ],
-      "avatar": "https://gravatar.com/avatar/8e04be7sssfssd3e0d45d4",
+      "avatar": "https://gravatar.com/avatar/8e04be7sssfd3e0d45d4",
       "email": "nacho@gmail.com"
     },
     {
@@ -44,25 +44,25 @@
     {
       "id": 2,
       "name": "ensaladas",
-      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/luke-van-zyl--zl31lo9vg8-unsplash_dqoawr.jpg",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702589/categorias/taylor-kiser-EvoIiaIVRzU-unsplash_mm2brm.jpg",
       "path": "/photos/ensaladas"
     },
     {
       "id": 3,
       "name": "sopas",
-      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/luke-van-zyl--zl31lo9vg8-unsplash_dqoawr.jpg",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702589/categorias/sandie-clarke-z9h95s4DRXo-unsplash_s2jbqj.jpg",
       "path": "/photos/sopas"
     },
     {
       "id": 4,
       "name": "carnes",
-      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/luke-van-zyl--zl31lo9vg8-unsplash_dqoawr.jpg",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702588/categorias/jason-leung-O67LZfeyYBk-unsplash_tbrycq.jpg",
       "path": "/photos/carnes"
     },
     {
       "id": 5,
       "name": "pescados",
-      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/luke-van-zyl--zl31lo9vg8-unsplash_dqoawr.jpg",
+      "cover": "https://res.cloudinary.com/dwu9vzzgg/image/upload/c_thumb,w_200,g_face/v1565702587/categorias/adrien-sala-qvIrI4ueqzY-unsplash_hsze7e.jpg",
       "path": "/photos/pescados"
     },
     {
