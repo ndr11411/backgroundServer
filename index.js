@@ -19,7 +19,7 @@ const auth = jwt({
   credentialsRequired: false
 })
 
-require('./adapter')
+require('./adapterUser')
 
 const server = new ApolloServer({
   introspection: true, // do this only for dev purposes
