@@ -6,7 +6,7 @@ const json = require('./dbuser.json')
 const isLocal = !process.env.NOW_REGION
 const type = isLocal ? new FileSync('./dbuser.json') : new Memory
 
-const db = low(type)
-db.defaults(json).write()
+const dbuser = low(type)
+dbuser.defaults(json).write()
 
 module.exports = dbuser
