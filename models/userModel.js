@@ -1,19 +1,19 @@
-const db = require('../adapter')
+const dbuser = require('../adapterUser')
 const crypto = require('crypto')
 const uuidv1 = require('uuid/v1')
 const bcrypt = require('bcrypt')
 
 
 function addFav ({ id, photoId }) {
-  db.get('users').find({ id }).update('favs', favs => [...favs, photoId]).write()
+  dbuser.get('users').find({ id }).update('favs', favs => [...favs, photoId]).write()
 }
 
 function removeFav ({ id, photoId }) {
-  db.get('users').find({ id }).update('favs', favs => favs.filter(fav => fav !== photoId)).write()
+  dbuser.get('users').find({ id }).update('favs', favs => favs.filter(fav => fav !== photoId)).write()
 }
 
 function hasFav ({ id, photoId }) {
-  const user = db.get('users').find({ id }).value()
+  const user = dbuser.get('users').find({ id }).value()
   const hasFav = user.favs.includes(photoId)
   return hasFav
 }
@@ -31,8 +31,8 @@ async function create ({ email, password }) {
     email
   }
 
-  // Write in db.json
-  db.get('users')
+  // Write in dbuser.json
+  dbuser.get('users')
     .push(user)
     .write()
 
@@ -40,7 +40,7 @@ async function create ({ email, password }) {
 }
 
 function find ({ email }) {
-  return db.get('users')
+  return dbuser.get('users')
   .find({ email })
   .value()
 }
