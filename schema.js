@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt')
 
 const typeDefs = gql`
   type User {
-    id: ID
+    _id: ID
     avatar: String
     name: String
     email: String
@@ -15,7 +15,7 @@ const typeDefs = gql`
   }
 
   type Photo {
-    id: ID
+    _id: ID
     name: String
     tiempo: Int
     dificultad: String
@@ -28,7 +28,7 @@ const typeDefs = gql`
   }
 
   type Category {
-    id: ID
+    _id: ID
     cover: String
     name: String
     emoji: String
@@ -39,11 +39,11 @@ const typeDefs = gql`
     favs: [Photo]
     categories: [Category]
     photos(categoryId: ID): [Photo],
-    photo(id: ID!): Photo
+    photo(_id: ID!): Photo
   }
 
   input LikePhoto {
-    id: ID!
+    _id: ID!
   }
 
   input UserCredentials {
@@ -60,9 +60,9 @@ const typeDefs = gql`
 `
 
 function checkIsUserLogged (context) {
-  const { email, id } = context
+  const { email, _id } = context
   // check if the user is logged
-  if (!id) throw new Error('you must be logged in to perform this action')
+  if (!_id) throw new Error('you must be logged in to perform this action')
   // find the user and check if it exists
   const user = userModel.find({ email })
   // if user doesnt exist, throw an error
@@ -84,42 +84,42 @@ const resolvers = {
   Mutation: {
     likeAnonymousPhoto: (_, { input }) => {
       // find the photo by id and throw an error if it doesn't exist
-      const { id: photoId } = input
-      const photo = photosModel.find({ id: photoId })
+      const { _id: photoId } = input
+      const photo = photosModel.find({ _id: photoId })
       if (!photo) {
-        throw new Error(`Couldn't find photo with id ${photoId}`)
+        throw new Error(`Couldn't find photo with _id ${photoId}`)
       }
       // put a like to the photo
-      photosModel.addLike({ id: photoId })
+      photosModel.addLike({ _id: photoId })
       // get the updated photos model
-      const actualPhoto = photosModel.find({ id: photoId })
+      const actualPhoto = photosModel.find({ _id: photoId })
       return actualPhoto
     },
     likePhoto: (_, { input }, context) => {
-      const { id: userId } = checkIsUserLogged(context)
+      const { _id: userId } = checkIsUserLogged(context)
 
       // find the photo by id and throw an error if it doesn't exist
-      const { id: photoId } = input
-      const photo = photosModel.find({ id: photoId })
+      const { _id: photoId } = input
+      const photo = photosModel.find({ _id: photoId })
       if (!photo) {
-        throw new Error(`Couldn't find photo with id ${photoId}`)
+        throw new Error(`Couldn't find photo with _id ${photoId}`)
       }
 
-      const hasFav = userModel.hasFav({ id: userId, photoId })
+      const hasFav = userModel.hasFav({ _id: userId, photoId })
 
       if (hasFav) {
-        photosModel.removeLike({ id: photoId })
-        userModel.removeFav({ id: userId, photoId })
+        photosModel.removeLike({ _id: photoId })
+        userModel.removeFav({ _id: userId, photoId })
       } else {
         // put a like to the photo and add the like to the user database
-        photosModel.addLike({ id: photoId })
-        userModel.addFav({ id: userId, photoId })
+        photosModel.addLike({ _id: photoId })
+        userModel.addFav({ _id: userId, photoId })
       }
 
       // get favs from user before exiting
       const favs = tryGetFavsFromUserLogged(context)
       // get the updated photos model
-      const actualPhoto = photosModel.find({ id: photoId, favs })
+      const actualPhoto = photosModel.find({ _id: photoId, favs })
 
       return actualPhoto
     },
@@ -143,7 +143,7 @@ const resolvers = {
 
       // return json web token
       return jsonwebtoken.sign(
-        { id: newUser.id, email: newUser.email },
+        { _id: newUser._id, email: newUser.email },
         process.env.JWT_SECRET,
         { expiresIn: '1y' }
       )
@@ -169,7 +169,7 @@ const resolvers = {
 
       // return json web token
       return jsonwebtoken.sign(
-        { id: user.id, email: user.email },
+        { _id: user._id, email: user.email },
         process.env.JWT_SECRET,
         { expiresIn: '1d' }
       )
@@ -184,7 +184,7 @@ const resolvers = {
     categories () {
       return categoriesModel.list()
     },
-    photo (_, { id }, context) {
+    photo (_, { _id }, context) {
       const favs = tryGetFavsFromUserLogged(context)
       return photosModel.find({ id, favs })
     },
