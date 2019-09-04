@@ -1,15 +1,15 @@
 const express = require('express')
 const cors = require('cors')
-const { ApolloServer } = require('apollo-server-express')
-const { resolvers, typeDefs } = require('./schema')
+const { ApolloServer } = require('apollo-server-express') // OK
+const { resolvers, typeDefs } = require('./schema') // OK
 const jwt = require('express-jwt')
 
 // this is not secure! this is for dev purposes
 process.env.JWT_SECRET = process.env.JWT_SECRET || 'somereallylongsecretkey'
 
-const PORT = process.env.PORT || 3500
+const PORT = process.env.PORT || 3501
 const app = express()
-const { categories } = require('./db.json')
+const { users } = require('./db.json')
 
 app.use(cors())
 
@@ -44,8 +44,8 @@ const errorHandler = (err, req, res, next) => {
 app.use(errorHandler)
 server.applyMiddleware({ app, path: '/graphql' })
 
-app.get('/categories', function (req, res) {
-  res.send(categories)
+app.get('/users', function (req, res) {
+  res.send(users)
 })
 
 if (!process.env.NOW_REGION) {
