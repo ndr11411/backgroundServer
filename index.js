@@ -9,7 +9,7 @@ process.env.JWT_SECRET = process.env.JWT_SECRET || 'somereallylongsecretkey'
 
 const PORT = process.env.PORT || 3501
 const app = express()
-const { users } = require('./db.json')
+const { photos } = require('./db.json')
 
 app.use(cors())
 
@@ -44,8 +44,8 @@ const errorHandler = (err, req, res, next) => {
 app.use(errorHandler)
 server.applyMiddleware({ app, path: '/graphql' })
 
-app.get('/users', function (req, res) {
-  res.send(users)
+app.get('/photos', function (req, res) {
+  res.send(photos)
 })
 
 if (!process.env.NOW_REGION) {
